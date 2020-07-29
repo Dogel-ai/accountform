@@ -18,21 +18,26 @@ namespace Review
           // Username
           Console.Write("Please type your Username: \n");
           username = Convert.ToString(Console.ReadLine());
+          Console.WriteLine();
           // Mail
           Console.Write("Please type your mail: \n");
           mail = Convert.ToString(Console.ReadLine());
+          Console.WriteLine();
           // Password
           Console.Write("Set your password: \n");
           password = Convert.ToString(Console.ReadLine());
+          Console.WriteLine();
           // Setting Up End Info
-          Console.Write("You are one step ahead to make your account! \n");
+          Console.Write("You are one step ahead to make your account! \n\n");
           // Show Prompt 
           Console.Write("Do you want to see your account details? (Y / N)");
           details = Convert.ToString(Console.ReadLine());
           if(details == "Y") {
-            Console.WriteLine($"Username: {username}");
-            Console.WriteLine($"Mail: {mail}");
-            Console.WriteLine($"Password: {password}");
+            Console.WriteLine("--------------------");
+            Console.WriteLine($"\tUsername: {username}");
+            Console.WriteLine($"\tMail: {mail}");
+            Console.WriteLine($"\tPassword: {password}");
+            Console.WriteLine("--------------------\n");
             Console.WriteLine("Account Made!");
           } else {
             Console.WriteLine("Account Made!");
